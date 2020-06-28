@@ -6,7 +6,7 @@ class AppSeed extends Seeder
 {
     public function run()
     {
-        $users = factory(\App\User::class, 480)->create();
+        $users = factory(\App\User::class, 20)->create();
 
         foreach ($users as $user) {
             factory(\App\Picture::class, rand(1, 10))->create([
